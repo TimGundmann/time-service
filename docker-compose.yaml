@@ -1,0 +1,12 @@
+version: '2'
+services:
+  news:
+    network_mode: "host"
+    restart: "always"
+    build: .
+    image: time-service
+    volumes:
+      - /security:/security
+    container_name: time-service
+    environment:
+      TZ: "Europe/Amsterdam"
