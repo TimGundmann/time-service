@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/registrations")
-public class RegistrationController {
+class RegistrationController {
 
     private RegistrationService service;
 
@@ -19,17 +19,17 @@ public class RegistrationController {
 
 
     @GetMapping("/start")
-	public void start() {
+	void start() {
 		
 	}
 
     @GetMapping("/active")
-	public LocalDateTime active(Principal principal) {
+	LocalDateTime active(Principal principal) {
 		return this.service.active(principal.getName()).get();
 	}
 
     @GetMapping("/stop")
-	public void stop() {
+	void stop() {
 		
 	}
 

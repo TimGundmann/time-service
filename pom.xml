@@ -7,7 +7,7 @@
 	<version>1.0</version>
 	<packaging>jar</packaging>
 	
-	<name>news-service</name>
+	<name>time-service</name>
 	<description>Time service for gundmann.dk</description>
 	
 	<parent>
