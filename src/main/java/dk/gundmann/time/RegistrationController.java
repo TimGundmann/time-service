@@ -25,7 +25,7 @@ class RegistrationController {
 
     @GetMapping("/active")
 	LocalDateTime active(Principal principal) {
-		return this.service.active(principal.getName()).get();
+		return this.service.active(principal.getName()).orElse(null);
 	}
 
     @GetMapping("/stop")
