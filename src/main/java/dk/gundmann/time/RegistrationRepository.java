@@ -8,7 +8,7 @@ import org.springframework.data.repository.CrudRepository;
 
 interface RegistrationRepository extends CrudRepository<Registration, String> {
 
-    @Query("SELECT r.startTime WHERE REGISTRATION r where r.email = :eamil and endTime is null")
+    @Query("SELECT r.startTime WHERE REGISTRATION r where r.email = :email and endTime is null")
 	Optional<LocalDateTime> findActiveByEmail(String email);
 
 }
