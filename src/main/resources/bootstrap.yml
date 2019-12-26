@@ -1,0 +1,12 @@
+server:
+  port: 8440
+
+spring:
+  profiles:
+    active:
+    - prod
+  application:
+    name: time
+  cloud:
+    config:
+      uri: http://192.168.1.100:5678
